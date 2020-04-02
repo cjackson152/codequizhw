@@ -1,0 +1,68 @@
+#question {
+    padding: 10px;
+    background-color: dodgerblue;
+    width: 75%;
+    height: 100px;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 50px;
+    float: left;
+    font-weight: bolder;
+}
+/* for break hacky*/
+#breakpoint {
+    background-color: dodgerblue;
+    height: 100px;
+    width:75%;
+}
+/* style for question and answer boxes */
+
+#answer {
+    padding: 50px;
+    background-color: dodgerblue;
+    width: 75%;
+    height: 100px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bolder;
+}
+/* styling for timer */
+#remainingTime{
+    background-color: dodgerblue;
+    width: 75%;
+    text-align: center;
+    padding: 10px;
+    font-weight: bolder;
+}
+/* styling for button and its container*/
+#buttonBox {
+    padding: 10px;
+    background-color: dodgerblue;
+    width: 75%;
+    height: 100px;
+    text-align: center;
+}
+
+#submitButton {
+    height: 50px;
+    width: 100px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+#highScores {
+    width: 75%;
+    height: 100%;
+    background-color: goldenrod;
+    text-align: center;
+
+}
+
+#_scores {
+    width: 25%;
+    height: 100%;
+    padding: 20px;
+    text-align: center;
+    background-color: goldenrod;
+    float: right;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script rel="text/javascript" src="script.js"></script>
+</head>
+<body>
+    <div id = "_scores">High Scores:
+    <input type = "text" id = "names">
+</div>
+    <!--containers for styling-->
+    <div id="question"></div>
+    <div id="breakpoint"></div>
+    <div id="answer"></div>
+    <div id="buttonBox">
+    <input type="button" value="Submit" id="submitButton" onClick="checkQuestions()" />
+</div>
+<!-- timer
+    // couldnt figure out how to make the timer work with losing time without breaking it -->
+<script>
+function startTimer(duration, display) {
+    var timer = duration, seconds;
+    setInterval(function () {
+        seconds = parseInt(timer % 60, 10);
+
+        seconds = seconds < 10 ? "0" + seconds : seconds;
+
+        display.text(seconds);
+
+        if (--timer < 0) {
+            timer = duration;
+        }
+    }, 1000);
+}
+
+jQuery(function ($) {
+    var sixty = 60,
+        display = $('#time');
+    startTimer(sixty, display);
+});
+</script>
+<div id = "remainingTime" >Remaining Time: <span id = "time"></span></div>
+    
+
+</body>
+</html>
